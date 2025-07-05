@@ -1,0 +1,110 @@
+.linha {
+    border: none;
+    height: 3px;
+    background: #4e4c4c;
+}
+
+.linha2 {
+    border: none;
+    height: 3px;
+    background: #d3d2d2;
+}
+
+.pcla {
+    font: normal 15pt Arial;
+    color: rgb(255, 255, 255);
+    text-shadow: black 5px 5px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.right .decorativa {
+  width: 400px; /* Ajuste o tamanho que preferir */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.nos_lindos {
+    width: 300px;
+    border-radius: 10%;
+}
+
+.imagem-com-audio {
+  margin-top: 30px;
+}
+
+.imagem-com-audio img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button, #next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
+
+.caroseu {
+  justify-content: center;
+  text-align: center;
+}
+
+  .paragrafo-estilizado {
+      background: linear-gradient(135deg, #acbbf2, #acbbf2);
+      border: 3px solid #5e79ff;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
