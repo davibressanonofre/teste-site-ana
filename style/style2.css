@@ -96,15 +96,38 @@
   text-align: center;
 }
 
-  .paragrafo-estilizado {
-      background: linear-gradient(135deg, #acbbf2, #acbbf2);
-      border: 3px solid #5e79ff;
-      border-radius: 15px;
-      padding: 30px;
+    .caixa-amor {
+      background: #ffffff;
+      border: 3px solid #d33a54;
+      border-radius: 12px;
+      padding: 25px;
       max-width: 500px;
-      text-align: center;
-      font-size: 1.2rem;
-      color: #333;
+      width: 100%;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+    }
+
+    .caixa-amor h2 {
+      color: #f80101;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .caixa-amor ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .caixa-amor ul li {
+      background: #ffe3ec;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #4e4c4c;
+    }
+
+    .caixa-amor ul li.babi {
+      color: rgb(255, 0, 174);
     }
