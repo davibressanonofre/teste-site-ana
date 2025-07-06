@@ -1,4 +1,22 @@
 @media (max-width: 600px) {
+
+    .container {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container > div {
+  flex: 1 1 300px;
+}
+
+/* Imagens sempre no tamanho máximo permitido */
+.imagem-com-audio img,
+.right .decorativa {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
       h1 {
         font-size: 1.5rem;
       }
