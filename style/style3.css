@@ -25,3 +25,65 @@
         font-size: 1rem;
       }
     }
+
+.site2 {
+      display: inline-block;
+      padding: 10px 20px;
+      color: rgb(224, 244, 255);
+      font-size: 1.5rem;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+      background-color: rgb(230, 191, 18);
+    }
+
+    .site2:hover {
+      transform: scale(1.05);
+    }
+
+.rodape {
+  background: #222;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha tudo à esquerda */
+  font-family: Arial, sans-serif;
+}
+
+.rodape .contato p {
+  margin: 5px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rodape .contato .barra {
+  margin: 0 8px;
+  color: #888;
+}
+
+.rodape .redes {
+  margin-top: 10px;
+}
+
+.rodape .redes img {
+  width: 32px;
+  height: 32px;
+}
+
+.sobre {
+    color: rgb(69, 54, 168);
+}
+
+@media (max-width: 600px) {
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+  }
+  .rodape .redes {
+    margin-top: 10px;
+  }
+}

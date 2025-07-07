@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nós</title>
+  <style>
+    body {
+      background-color: rgb(244, 222, 116);
+      font: normal 13pt Arial;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .titulobio {
+      margin-bottom: 20px;
+    }
+
+    .listas-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .lista {
+      background-color: #fff8dc;
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-sizing: border-box;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .lista h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .lista ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+        @media (max-width: 600px) {
+      .lista {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+          .voltarinicio {
+      display: inline-block;
+      padding: 10px 20px;
+      color: rgb(224, 244, 255);
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <h2 class="titulobio">Biografia de cada um</h2>
+
+  <div class="listas-container">
+    <div class="lista">
+      <h3>Davi</h3>
+      <ul>
+        <li>Engraçado</li>
+        <li>Gênio</li>
+        <li>Rei da comédia</li>
+        <li>Homem com H</li>
+        <li>Gentil</li>
+        <li>Fiel</li>
+        <li>Ouvinte</li>
+        <li>Musculoso</li>
+      </ul>
+    </div>
+
+    <div class="lista">
+      <h3>Ana Sophia</h3>
+      <ul>
+        <li>Gênia da química</li>
+        <li>Carinhosa</li>
+        <li>Inteligente</li>
+        <li>Companheira</li>
+        <li>Divertida</li>
+        <li>Incrível</li>
+        <li>Fiel</li>
+        <li>Faz brownie bem</li>
+      </ul>
+    </div>
+  </div>
+
+<br>
+<a href="index.html" class="voltarinicio">Voltar ao Início</a>
+<br>
+
+</body>
+</html>

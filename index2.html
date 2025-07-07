@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que eu sinto por você</title>
+  <style>
+    body {
+      background-color: rgb(244, 222, 116);
+      font: normal 13pt Arial;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .daviimagem {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      filter: brightness(0.7);
+    }
+
+    .caixaparag {
+      border: 2px solid #333;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+      padding: 20px;
+      background-color: #ffeeee;
+      box-sizing: border-box;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .parag {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .caixaparag {
+        padding: 15px;
+      }
+
+      .parag {
+        font-size: 1.1rem;
+      }
+    }
+
+      .voltarinicio {
+      display: inline-block;
+      padding: 10px 20px;
+      color: rgb(224, 244, 255);
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <img class="daviimagem" src="imagens/davilegal.jpg" alt="">
+
+  <div class="caixaparag">
+    <p class="parag">
+      Amor, te conhecer foi a melhor coisa que poderia me acontecer, você é meu tudo, o meu querer, o meu desejo a todo momento. Penso em você quando acordo, antes de dormir e ao longo do dia. Quero sempre estar próximo a você e te escutar falar a cada momento. Sinto que fomos feitos um para o outro amor, e espero que você sinta o mesmo, o que na verdade eu sinto que é recíproco. E esse site é apenas uma pequena demonstração de afeto por você, pode parecer bobo mas eu coloquei muito esforço e carinho nele e espero de verdade que você goste. Nunca se esqueça que eu te amo amor, nunca vou deixar você se esquecer do quão amada você é. Literalmente, você mudou minha vida para melhor, não consigo me imaginar mais sem você flamenguista. Te amo ❤️
+    </p>
+  </div>
+
+<br>
+<a href="index.html" class="voltarinicio">Voltar ao Início</a>
+<br>
+<audio id="musica" autoplay loop>
+    <source src="imagens/lalaland.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+   <script>
+    // Quando a página carregar, define o volume
+    window.addEventListener('load', function() {
+      var audio = document.getElementById('musica');
+      audio.volume = 0.5; // Volume entre 0.0 (mudo) e 1.0 (máximo)
+    });
+  </script>
+
+</body>
+</html>
