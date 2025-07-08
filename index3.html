@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre nós</title>
+  <title>Sobre você</title>
   <style>
     body {
       background-color: rgb(244, 222, 116);
@@ -70,40 +70,304 @@
       z-index: 1;
     }
 
+    .eventos {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.evento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.evento .imagem {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.evento .imagem img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.evento .descricao {
+  flex: 1 1 50%;
+  background-color: #fff8dc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.evento .descricao h4 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.evento .descricao p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* alterna ordem (imagem depois do texto) */
+.evento.invertido {
+  flex-direction: row-reverse;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .evento, .evento.invertido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .evento .descricao, .evento .imagem {
+    flex: 1 1 100%;
+  }
+
+  .evento .imagem img {
+    max-width: 100%;
+  }
+}
+
+.video-evento {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: block;
+}
+
+.retrospectiva {
+  color: white;
+  text-shadow: 3px 5px 5px black;
+}
+
   </style>
 </head>
 <body>
-  <h2 class="titulobio">Biografia de cada um</h2>
+  <h2 class="titulobio">Biografia da lindeza</h2>
 
   <div class="listas-container">
     <div class="lista">
-      <h3>Davi</h3>
+      <h3>Suas coisas favoritas:</h3>
       <ul>
-        <li>Engraçado</li>
-        <li>Gênio</li>
-        <li>Rei da comédia</li>
-        <li>Homem com H</li>
-        <li>Gentil</li>
-        <li>Fiel</li>
-        <li>Ouvinte</li>
-        <li>Musculoso</li>
+        <li>Cor Amarela</li>
+        <li>Lírio</li>
+        <li>Cuzcuz</li>
+        <li>Davi</li>
+        <li>Livros (especificamente fanfics de harry potter)</li>
+        <li>Kitesurf</li>
+        <li>Química (Termo química)</li>
+        <li>Star Wars</li>
+        <li>Macarrão com carne moída</li>
+        <li>Música Heaven e MPB</li>
       </ul>
     </div>
 
     <div class="lista">
-      <h3>Ana Sophia</h3>
+      <h3>Coisas que gosto em você:</h3>
       <ul>
-        <li>Gênia da química</li>
-        <li>Carinhosa</li>
-        <li>Inteligente</li>
-        <li>Companheira</li>
-        <li>Divertida</li>
-        <li>Incrível</li>
-        <li>Fiel</li>
-        <li>Faz brownie bem</li>
+        <li>Seu sorriso</li>
+        <li>Seus olhos</li>
+        <li>Seu cabelo</li>
+        <li>Sua maneira de falar</li>
+        <li>Sua risada</li>
+        <li>Seu sorriso</li>
+        <li>Seu brownie</li>
+        <li>Sua pessoa</li>
+      </ul>
+    </div>
+
+        <div class="lista">
+      <h3>Piadas/frases internas com você:</h3>
+      <ul>
+        <li>"VAALHA"</li>
+        <li>"Aqui é Vila Velha 😎"</li>
+        <li>"Achei divônico"</li>
+        <li>"Amooooo 😍"</li>
+        <li>"Boa noiteeee, Dorme bemmm, te amooo, vou sonhar com você 😍 (Figurinha do minion)"</li>
+        <li>"Vamos fazer análise combinatória juntos?"</li>
+      </ul>
+    </div>
+
+        <div class="lista">
+      <h3>Músicas que combinam com você/que te dedico:</h3>
+      <ul>
+        <li>É Você - Tribalistas</li>
+        <li>Friday I'm In Love - The Cure</li>
+        <li>Já Sei Namorar - Tribalistas</li>
+        <li>A Beleza É Você Menina - Bebeto</li>
+        <li>Heaven - Bryan Adams</li>
+        <li>Flor de Tangerina - Alceu Valença</li>
+        <li>Marry You - Bruno Mars</li>
+        <li>Tiro Ao Álvaro - Elis Regina</li>
       </ul>
     </div>
   </div>
+
+<br>
+<h1 class="retrospectiva">Retrospectiva de nossos momentos juntos</h1>
+
+<div class="eventos">
+  <div class="evento">
+    <div class="imagem">
+      <img src="imagens/sushi.jpg" alt="Imagem 1">
+    </div>
+    <div class="descricao">
+      <h4>11/12/2024</h4>
+      <p>Nosso primeiro encontro no shopping. Foi o momento em que vi o amor da minha vida pela primeira vez</p>
+    </div>
+  </div>
+
+  <div class="evento invertido">
+    <div class="imagem">
+<video controls class="video-evento">
+  <source src="imagens/bichinho.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos HTML5.
+</video>
+
+    </div>
+    <div class="descricao">
+      <h4>11/12/2024</h4>
+      <p>Quando eu peguei o bichinho e a gente ficou muito feliz KKKKKK</p>
+    </div>
+  </div>
+
+  <div class="evento">
+    <div class="imagem">
+      <img src="imagens/segundodate.jpg" alt="Imagem 3">
+    </div>
+    <div class="descricao">
+      <h4>13/12/2024</h4>
+      <p>Dia em que conheci o dedé e a gente foi no mar juntos pela primeira vez</p>
+    </div>
+  </div>
+</div>
+
+  <div class="evento invertido">
+    <div class="imagem">
+      <img src="imagens/anasorvete.jpg" alt="">
+    </div>
+    <div class="descricao">
+      <h4>26/12/2024</h4>
+      <p>Comemorando o natal com o melhor presente possível</p>
+    </div>
+  </div>
+
+    <div class="evento">
+    <div class="imagem">
+      <img src="imagens/anaaniversario.jpg" alt="Imagem 3">
+    </div>
+    <div class="descricao">
+      <h4>25/02/2025</h4>
+      <p>Quando fui convidado pro seu aniversário de 17, fui o primeiro a chegar e joguei presidente e ganhei em cima da aniversariante</p>
+    </div>
+  </div>
+</div>
+
+  <div class="evento invertido">
+    <div class="imagem">
+      <img src="imagens/anacozinhando.jpg" alt="">
+    </div>
+    <div class="descricao">
+      <h4>08/03/2025</h4>
+      <p>Primeira vez de muitas fazendo brownie lá em casa</p>
+    </div>
+  </div>
+
+    <div class="evento">
+    <div class="imagem">
+      <img src="imagens/anacinema.jpg" alt="">
+    </div>
+    <div class="descricao">
+      <h4>24/04/2025</h4>
+      <p>Nosso primeiro date no cinema juntos assistindo Star Wars A Vingança dos Sith e MEU DEUS que filme bom</p>
+    </div>
+  </div>
+
+  <div class="evento invertido">
+    <div class="imagem">
+<video controls class="video-evento">
+  <source src="imagens/starwars.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos HTML5.
+</video>
+
+    </div>
+    <div class="descricao">
+      <h4>24/04/2025</h4>
+      <p>Cena do Anakin e Obiwan que gravei muuuuito tensa e você sabendo a fala inteira</p>
+    </div>
+  </div>
+
+    <div class="evento">
+    <div class="imagem">
+<video controls class="video-evento">
+  <source src="imagens/rolebike.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos HTML5.
+</video>
+
+    </div>
+    <div class="descricao">
+      <h4>18/05/2025</h4>
+      <p>Quando fomos dar um rolê de bike e jogar altinha, esse dia foi ótimo</p>
+    </div>
+  </div>
+
+    <div class="evento invertido">
+    <div class="imagem">
+      <img src="imagens/agntpiscina.jpg.jpeg" alt="">
+    </div>
+    <div class="descricao">
+      <h4>07/06/2025</h4>
+      <p>Dia que conheci seu pai e os amigos dele (e fui ameaçado de diversas maneiras diferentes) e foi um dia ótimo porque passei ele praticamente INTEIRO do seu lado</p>
+    </div>
+  </div>
+
+    <div class="evento">
+    <div class="imagem">
+      <img src="imagens/nos_lindos.jpg" alt="">
+    </div>
+    <div class="descricao">
+      <h4>12/06/2025</h4>
+      <p>Saímos no dia dos namorados pela primeira vez e ganhei só presente top</p>
+    </div>
+  </div>
+
+    <div class="evento invertido">
+    <div class="imagem">
+<video controls class="video-evento">
+  <source src="imagens/anacirurgia.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos HTML5.
+</video>
+
+    </div>
+    <div class="descricao">
+      <h4>21/06/2025</h4>
+      <p>Dia em que fomos nadando até a ilha e você fez uma cirurgia no Rafael</p>
+    </div>
+  </div>
+
+    <div class="evento">
+    <div class="imagem">
+      <img src="imagens/nos_fofos.jpg" alt="">
+    </div>
+    <div class="descricao">
+      <h4>28/06/2025</h4>
+      <p>E por fim, dia em que conheci sua mãe e tivemos um encontro maravilhoso</p>
+    </div>
+  </div>
+
+</div>
 
 <br>
 <a href="index.html" class="voltarinicio">Voltar ao Início</a>
